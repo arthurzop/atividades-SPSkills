@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: sans-serif;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 250px solid transparent;
+  border-right: 250px solid transparent;
+  border-bottom: 400px solid blue;
+
+  animation: transforma 3s infinite ;
+  animation-delay: 2s;
+  
+}
+
+
+@keyframes transforma {
+    from   {border-bottom: 400px solid blue;}
+    to {
+        border-left: 250px solid yellow;
+        border-right: 250px solid yellow;
+        border-bottom: 400px solid yellow;
+        
+    }
+}
